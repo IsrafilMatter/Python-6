@@ -2,5 +2,8 @@
 # Author: Israfil Palabay
 # Date: March 28, 2025
 
- # If `s` is shorter than `width`, pad it with spaces on the right
- # Output: "Hello     " (5 spaces added)
+def align_left(s, width):
+    # If `s` is shorter than `width`, pad it with spaces on the right
+    return s + ' ' * (width - len(s)) if len(s) < width else s  
+
+print(align_left("Hello", 10))  # Print Results
