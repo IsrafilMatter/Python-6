@@ -8,3 +8,9 @@ def custom_removesuffix(text, suffix): # Function to remove a specified suffix f
     return text # Return the original string if the suffix is not found
 
 # Print Results
+test_string = "Hello World"
+suffix = "World"
+result = custom_removesuffix(test_string, suffix)
+
+print(f"Original: '{test_string}'")  # Show the original string
+print(f"After removesuffix: '{result}'")  # Show the modified string
