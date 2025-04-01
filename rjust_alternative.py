@@ -1,6 +1,6 @@
 # Program description: Replicates rjust() functionality by adding spaces at the beginning
 # Author: Israfil Palabay
-# Date: March 31, 2025
+# Date: April 1, 2025
 
 def custom_rjust(text, width): # Function to right-justify a string by adding leading spaces
     return ' ' * (width - len(text)) + text # Calculate the number of spaces needed and prepend them to the text
