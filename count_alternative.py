@@ -2,11 +2,20 @@
 # Author: Israfil Palabay
 # Date: April 1, 2025
 
-# Initialize counter to 0
-# Initialize start position to 0
-# While it is True, find next occurrence of substring starting from current position
-# If no more occurrences found (start == -1), break
-# Increment counter
-# Move start position to next character
-# Return the count
-# Print Results
+def custom_count(text, sub):
+    count = 0
+    start = 0
+    while True:
+        start = text.find(sub, start)
+        if start == -1:
+            break
+        count += 1
+        start += 1
+    return count
+
+test_string = "hello hello hello"
+substring = "hello"
+result = custom_count(test_string, substring)
+
+print(f"String: '{test_string}'")
+print(f"Count of '{substring}': {result}") 
